@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 3vh;
+    font-family: monospace;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input[type=number] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .item {
+        max-width: (100% / 1.2);
+        max-height: (100% / 1.2);
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        gap: 0.5em;
+
+        > li {
+            // border: 0.2em solid red;
+        }
+        
+        .input, .output {
+
+            .numbers {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                // grid-template-rows: repeat(2,1fr);
+                height: 100%;
+                gap: 0.5em;
+                // border: 0.2em solid blue;
+
+                .number {
+                    // border: 0.2em solid pink;
+                    
+                    > input {
+                        text-align: center;
+                        width: 4em;
+                        height: 4em;
+                        border-radius: 50%;
+                        border: 0.2em solid green;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+
+                .button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // background-color: green;
+
+                    > button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: green;
+                        color: white;
+                        border: 0;
+                        width: 4em;
+                        height: 4em;
+                        border-radius: 50%;
+                        padding: 0.5em;
+                        overflow: hidden;
+                        cursor: pointer;
+
+                        > span {
+                            // background-color: red;
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+            }
+        }
+
+        // .output {
+
+        //     .numbers {
+        //         display: grid;
+        //         grid-template-columns: repeat(7, 1fr);
+        //         gap: 0.5em;
+
+        //         .number {
+                    
+        //             > input {
+        //                 text-align: center;
+        //                 width: 4em;
+        //                 height: 4em;
+        //                 border-radius: 50%;
+        //                 border: 0.2em solid green;
+        //                 &:focus {
+        //                     outline: none;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}

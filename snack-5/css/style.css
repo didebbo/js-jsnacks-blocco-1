@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 3vh; font-family: monospace; }
+
+ul { display: -webkit-box; display: -ms-flexbox; display: flex; list-style: none; }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=number] { -webkit-appearance: none; margin: 0; -moz-appearance: textfield; }
+
+body { height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+body .item { max-width: 83.33333%; max-height: 83.33333%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; overflow: hidden; gap: 0.5em; }
+
+body .item .input .numbers, body .item .output .numbers { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[7]; grid-template-columns: repeat(7, 1fr); height: 100%; gap: 0.5em; }
+
+body .item .input .numbers .number > input, body .item .output .numbers .number > input { text-align: center; width: 4em; height: 4em; border-radius: 50%; border: 0.2em solid green; }
+
+body .item .input .numbers .number > input:focus, body .item .output .numbers .number > input:focus { outline: none; }
+
+body .item .input .numbers .button, body .item .output .numbers .button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+body .item .input .numbers .button > button, body .item .output .numbers .button > button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: green; color: white; border: 0; width: 4em; height: 4em; border-radius: 50%; padding: 0.5em; overflow: hidden; cursor: pointer; }
+
+body .item .input .numbers .button > button > span, body .item .output .numbers .button > button > span { font-size: 0.8em; }
